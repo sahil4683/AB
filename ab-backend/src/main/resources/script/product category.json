@@ -1,0 +1,1537 @@
+{
+    "categories": [
+      {
+        "name": "Industrial Chemicals",
+        "slug": "industrial-chemicals",
+        "url": "/industrial-chemicals.html",
+        "products": [
+          {
+            "name": "R -2-Amino-2-(Cyclohexa-1,4-Dien-1-yl)Acetic Acid",
+            "slug": "r-2-amino-2-cyclohexa-1-4-dien-1-yl-acetic-acid",
+            "anchor": "#r-2-amino-2-cyclohexa-1-4-dien-1-yl-acetic-acid"
+          },
+          {
+            "name": "2-acetamido-2-deoxy-alpha-d- Glucopyranosylchloride-3,4,6- Triacetate",
+            "slug": "2-acetamido-2-deoxy-alpha-d-glucopyranosylchloride-3-4-6-triacetate",
+            "anchor": "#2-acetamido-2-deoxy-alpha-d-glucopyranosylchloride-3-4-6-triacetate"
+          }
+        ]
+      },
+      {
+        "name": "Industrial Chemical",
+        "slug": "industrial-chemical",
+        "url": "/industrial-chemical.html",
+        "products": [
+          {
+            "name": "1-Aminocyclohexane Carboxylic Acid Hydrochloride",
+            "slug": "1-aminocyclohexane-carboxylic-acid-hydrochloride",
+            "anchor": "#1-aminocyclohexane-carboxylic-acid-hydrochloride"
+          },
+          {
+            "name": "Allylmagnesium Bromide Solution (1.0m In Diethyl Ether)",
+            "slug": "allylmagnesium-bromide-solution-1-0m-in-diethyl-ether",
+            "anchor": "#allylmagnesium-bromide-solution-1-0m-in-diethyl-ether"
+          },
+          {
+            "name": "(4r Cis)-1,1-Dimethyl Ethyl-6,-2-Aminoethyl2,2-Dimethyl-1,3-Dioxane-4-Acetate",
+            "slug": "4r-cis-1-1-dimethyl-ethyl-6-2-aminoethyl2-2-dimethyl-1-3-dioxane-4-acetate",
+            "anchor": "#4r-cis-1-1-dimethyl-ethyl-6-2-aminoethyl2-2-dimethyl-1-3-dioxane-4-acetate"
+          }
+        ]
+      },
+      {
+        "name": "Laboratory Chemical",
+        "slug": "laboratory-chemical",
+        "url": "/laboratory-chemical.html",
+        "products": [
+          {
+            "name": "4,4-AMINO-2-TRIFLUOROMETHYLPHENYL PIPERAZINE-1-CARBOXYLIC ACID tert BUTYL ESTER",
+            "slug": "4-4-amino-2-trifluoromethylphenyl-piperazine-1-carboxylic-acid-tert-butyl-ester",
+            "anchor": "#4-4-amino-2-trifluoromethylphenyl-piperazine-1-carboxylic-acid-tert-butyl-ester"
+          },
+          {
+            "name": "(2r)-2-Amino-2-(3-Methyl-1,2,4-Oxadiazole-5-Yl)Ethanol, 1hydrochloride Salt",
+            "slug": "2r-2-amino-2-3-methyl-1-2-4-oxadiazole-5-yl-ethanol-1hydrochloride-salt",
+            "anchor": "#2r-2-amino-2-3-methyl-1-2-4-oxadiazole-5-yl-ethanol-1hydrochloride-salt"
+          }
+        ]
+      },
+      {
+        "name": "Chemical Compound",
+        "slug": "chemical-compound",
+        "url": "/chemical-compound.html",
+        "products": [
+          {
+            "name": "N-4amino-Benzoyl-l-Glutamic Acid Diethyl Ester",
+            "slug": "n-4amino-benzoyl-l-glutamic-acid-diethyl-ester",
+            "anchor": "#n-4amino-benzoyl-l-glutamic-acid-diethyl-ester"
+          },
+          {
+            "name": "N-Biotinyl-3,6-Dioxaoctane-1,8-Diamine Trifluoroacetate Salt Solution",
+            "slug": "n-biotinyl-3-6-dioxaoctane-1-8-diamine-trifluoroacetate-salt-solution",
+            "anchor": "#n-biotinyl-3-6-dioxaoctane-1-8-diamine-trifluoroacetate-salt-solution"
+          },
+          {
+            "name": "N-a-benzoyl-l-arginine-7-amido-4-methyl Coumarin Hydrochloride",
+            "slug": "n-a-benzoyl-l-arginine-7-amido-4-methyl-coumarin-hydrochloride",
+            "anchor": "#n-a-benzoyl-l-arginine-7-amido-4-methyl-coumarin-hydrochloride"
+          }
+        ]
+      },
+      {
+        "name": "Chemicals Compound",
+        "slug": "chemicals-compound",
+        "url": "/chemicals-compound.html",
+        "products": [
+          {
+            "name": "2,4-Amino-5-Methoxy-2-Methylphenylsulfonylethylhydrogen Sulfate",
+            "slug": "2-4-amino-5-methoxy-2-methylphenylsulfonylethylhydrogen-sulfate",
+            "anchor": "#2-4-amino-5-methoxy-2-methylphenylsulfonylethylhydrogen-sulfate"
+          },
+          {
+            "name": "(2r,3r,4r,5s)-5-4-Benzamido-2-Oxopyrimidin-1-Yl-3-Benzoyloxy-4-Fluoro-4- Methyloxolan-2-Yl Methyl Benzoate",
+            "slug": "2r-3r-4r-5s-5-4-benzamido-2-oxopyrimidin-1-yl-3-benzoyloxy-4-fluoro-4-methyloxolan-2-yl-methyl-benzoate",
+            "anchor": "#2r-3r-4r-5s-5-4-benzamido-2-oxopyrimidin-1-yl-3-benzoyloxy-4-fluoro-4-methyloxolan-2-yl-methyl-benzoate"
+          },
+          {
+            "name": "Bis(2,2,6,6-Tetramethylpiperidinyl)Zinc, Lithium Chloride, Magnesium Chloride Complex Solution In Thf/Toluene",
+            "slug": "bis-2-2-6-6-tetramethylpiperidinyl-zinc-lithium-chloride-magnesium-chloride-complex-solution-in-thf-toluene",
+            "anchor": "#bis-2-2-6-6-tetramethylpiperidinyl-zinc-lithium-chloride-magnesium-chloride-complex-solution-in-thf-toluene"
+          }
+        ]
+      },
+      {
+        "name": "Speciality Chemical",
+        "slug": "speciality-chemical",
+        "url": "/speciality-chemical.html",
+        "products": [
+          {
+            "name": "Anti-Mouse Igg(Fc Specific)-Peroxidase, Antibody Produced In Goat",
+            "slug": "anti-mouse-igg-fc-specific-peroxidase-antibody-produced-in-goat",
+            "anchor": "#anti-mouse-igg-fc-specific-peroxidase-antibody-produced-in-goat"
+          },
+          {
+            "name": "(R)-4-4-Bromophenyl-3-Tert-Butoxycarbonyl Amino Butanoic Acid (BOC-D-B-ho-PHE-H-B(R)-OH)",
+            "slug": "r-4-4-bromophenyl-3-tert-butoxycarbonyl-amino-butanoic-acid-boc-d-b-ho-phe-h-b-r-oh",
+            "anchor": "#r-4-4-bromophenyl-3-tert-butoxycarbonyl-amino-butanoic-acid-boc-d-b-ho-phe-h-b-r-oh"
+          },
+          {
+            "name": "3-AMINO-5-METHOXYCARBONYLPHENYLBORONIC ACID",
+            "slug": "3-amino-5-methoxycarbonylphenylboronic-acid",
+            "anchor": "#3-amino-5-methoxycarbonylphenylboronic-acid"
+          }
+        ]
+      },
+      {
+        "name": "Speciality Chemicals",
+        "slug": "specialitychemical",
+        "url": "/specialitychemical.html",
+        "products": [
+          {
+            "name": "1,2-Amino-1,4-Methoxyphenylethyl Cyclohexanol Hydrochloride",
+            "slug": "1-2-amino-1-4-methoxyphenylethyl-cyclohexanol-hydrochloride",
+            "anchor": "#1-2-amino-1-4-methoxyphenylethyl-cyclohexanol-hydrochloride"
+          },
+          {
+            "name": "2,2-Dimethyl-3,2-Chloro,3,3,3-Trifluoropropenyl Cyclopropane Carboxylic Acid",
+            "slug": "2-2-dimethyl-3-2-chloro-3-3-3-trifluoropropenyl-cyclopropane-carboxylic-acid",
+            "anchor": "#2-2-dimethyl-3-2-chloro-3-3-3-trifluoropropenyl-cyclopropane-carboxylic-acid"
+          },
+          {
+            "name": "2-Amino-4''-Methoxyacetophenone Hydrochloride",
+            "slug": "2-amino-4-methoxyacetophenone-hydrochloride",
+            "anchor": "#2-amino-4-methoxyacetophenone-hydrochloride"
+          }
+        ]
+      },
+      {
+        "name": "Specialities Chemicals",
+        "slug": "specialities-chemicals",
+        "url": "/specialities-chemicals.html",
+        "products": [
+          {
+            "name": "5-Bromo-4-Chloro-3-Indolyl-B-D-Glucuronide Cyclohexyl Ammonium Salt  (X- Glucuro  Cha Salt)",
+            "slug": "5-bromo-4-chloro-3-indolyl-b-d-glucuronide-cyclohexyl-ammonium-salt-x-glucuro-cha-salt",
+            "anchor": "#5-bromo-4-chloro-3-indolyl-b-d-glucuronide-cyclohexyl-ammonium-salt-x-glucuro-cha-salt"
+          },
+          {
+            "name": "(2r,4s)-5-([1,1''-Biphenyl]-4-Yl)-4-((Tert-Butoxycarbonyl)Amino)-2-Methylpentan",
+            "slug": "2r-4s-5-1-1-biphenyl-4-yl-4-tert-butoxycarbonyl-amino-2-methylpentan",
+            "anchor": "#2r-4s-5-1-1-biphenyl-4-yl-4-tert-butoxycarbonyl-amino-2-methylpentan"
+          },
+          {
+            "name": "5- Chloro Thiophine 2- Carboxylic Acid",
+            "slug": "5-chloro-thiophine-2-carboxylic-acid",
+            "anchor": "#5-chloro-thiophine-2-carboxylic-acid"
+          }
+        ]
+      },
+      {
+        "name": "Water Treatment Chemicals",
+        "slug": "water-treatment-chemicals",
+        "url": "/water-treatment-chemicals.html",
+        "products": [
+          {
+            "name": "L-(+)-Acetylglutamic Acid Salt Of S(+)- 3-methyl-1-(2-piperidinophenyl)-1- Butylamine",
+            "slug": "l-acetylglutamic-acid-salt-of-s-3-methyl-1-2-piperidinophenyl-1-butylamine",
+            "anchor": "#l-acetylglutamic-acid-salt-of-s-3-methyl-1-2-piperidinophenyl-1-butylamine"
+          },
+          {
+            "name": "4-Allyl-3,2-Pyridyl-4,5-Dihydro-1h-1,2,4-Triazole-5-Thione",
+            "slug": "4-allyl-3-2-pyridyl-4-5-dihydro-1h-1-2-4-triazole-5-thione",
+            "anchor": "#4-allyl-3-2-pyridyl-4-5-dihydro-1h-1-2-4-triazole-5-thione"
+          }
+        ]
+      },
+      {
+        "name": "Miscellaneous Chemicals",
+        "slug": "miscellaneous-chemicals",
+        "url": "/miscellaneous-chemicals.html",
+        "products": [
+          {
+            "name": "2-acetamido-5- Fluorobenzoic Acid",
+            "slug": "2-acetamido-5-fluorobenzoic-acid",
+            "anchor": "#2-acetamido-5-fluorobenzoic-acid"
+          },
+          {
+            "name": "Alizarin-3-methylamine- N,n,-diacetic Acid",
+            "slug": "alizarin-3-methylamine-n-n-diacetic-acid",
+            "anchor": "#alizarin-3-methylamine-n-n-diacetic-acid"
+          }
+        ]
+      },
+      {
+        "name": "Solvents",
+        "slug": "solvents",
+        "url": "/solvents.html",
+        "products": [
+          {
+            "name": "2-(4-(Dimethylamino)Phenyl)-3,6-Dimethylbenzo[D]Thiazol-3-Ium Chloride",
+            "slug": "2-4-dimethylamino-phenyl-3-6-dimethylbenzo-d-thiazol-3-ium-chloride",
+            "anchor": "#2-4-dimethylamino-phenyl-3-6-dimethylbenzo-d-thiazol-3-ium-chloride"
+          },
+          {
+            "name": "4-(2,3-Dichlorophenyl)-2,6-Dimethyl-1,4-Dihydroxypyridine-3,5-Dicarboxylic Acid Mono Methyl Ester",
+            "slug": "4-2-3-dichlorophenyl-2-6-dimethyl-1-4-dihydroxypyridine-3-5-dicarboxylic-acid-mono-methyl-ester",
+            "anchor": "#4-2-3-dichlorophenyl-2-6-dimethyl-1-4-dihydroxypyridine-3-5-dicarboxylic-acid-mono-methyl-ester"
+          },
+          {
+            "name": "Alkyl(C12-16)Dimethylamine (Farmin Dm 2465)",
+            "slug": "alkyl-c12-16-dimethylamine-farmin-dm-2465",
+            "anchor": "#alkyl-c12-16-dimethylamine-farmin-dm-2465"
+          }
+        ]
+      },
+      {
+        "name": "Cosmetic Chemicals",
+        "slug": "cosmetic-chemicals",
+        "url": "/cosmetic-chemicals.html",
+        "products": [
+          {
+            "name": "N,N-Bis-R-1-Phenylethyldibenzo-D,F-1,3,2-Dioxaphospheoin-6-Amine",
+            "slug": "n-n-bis-r-1-phenylethyldibenzo-d-f-1-3-2-dioxaphospheoin-6-amine",
+            "anchor": "#n-n-bis-r-1-phenylethyldibenzo-d-f-1-3-2-dioxaphospheoin-6-amine"
+          },
+          {
+            "name": "1,4-AMINO-3-FLUOROPHENYL PYRIDIN 2(1H)-ONE",
+            "slug": "1-4-amino-3-fluorophenyl-pyridin-2-1h-one",
+            "anchor": "#1-4-amino-3-fluorophenyl-pyridin-2-1h-one"
+          },
+          {
+            "name": "S 2-Amino-3- 4 Iodophenyl Propionamide",
+            "slug": "s-2-amino-3-4-iodophenyl-propionamide",
+            "anchor": "#s-2-amino-3-4-iodophenyl-propionamide"
+          }
+        ]
+      },
+      {
+        "name": "Pharmaceutical Ingredients",
+        "slug": "pharmaceutical-ingredients",
+        "url": "/pharmaceutical-ingredients.html",
+        "products": [
+          {
+            "name": "(S)-2,2-Dimethyl-(1,3)Dioxolane-4-Carboxylic Acid Potassium Salt",
+            "slug": "s-2-2-dimethyl-1-3-dioxolane-4-carboxylic-acid-potassium-salt",
+            "anchor": "#s-2-2-dimethyl-1-3-dioxolane-4-carboxylic-acid-potassium-salt"
+          },
+          {
+            "name": "2-(2-Amino-4-Thiazolyl)-2-Methoxyiminoacetic, Thiobenzothiazole",
+            "slug": "2-2-amino-4-thiazolyl-2-methoxyiminoacetic-thiobenzothiazole",
+            "anchor": "#2-2-amino-4-thiazolyl-2-methoxyiminoacetic-thiobenzothiazole"
+          },
+          {
+            "name": "4-Amino-3-Bromo Benzoic Acid",
+            "slug": "4-amino-3-bromo-benzoic-acid",
+            "anchor": "#4-amino-3-bromo-benzoic-acid"
+          }
+        ]
+      },
+      {
+        "name": "Snow Powder",
+        "slug": "snow-powder",
+        "url": "/snow-powder.html",
+        "products": [
+          {
+            "name": "(1r)-1-(4-Aminomethyl)Phenyl)-2,2-Difluoroethanol, 1hydrochloride Salt",
+            "slug": "1r-1-4-aminomethyl-phenyl-2-2-difluoroethanol-1hydrochloride-salt",
+            "anchor": "#1r-1-4-aminomethyl-phenyl-2-2-difluoroethanol-1hydrochloride-salt"
+          },
+          {
+            "name": "O-(1h- Benzotriazole-1-yl)nnnn-tetramethyluronium Tetrafluoro Borate",
+            "slug": "o-1h-benzotriazole-1-yl-nnnn-tetramethyluronium-tetrafluoro-borate",
+            "anchor": "#o-1h-benzotriazole-1-yl-nnnn-tetramethyluronium-tetrafluoro-borate"
+          },
+          {
+            "name": "[(Di(1-Adamantyl)-Butylphosphine)-2-(2-Amino-1,1-Biphenyl)]Palladium(Ii)Methanesulfonate",
+            "slug": "di-1-adamantyl-butylphosphine-2-2-amino-1-1-biphenyl-palladium-ii-methanesulfonate",
+            "anchor": "#di-1-adamantyl-butylphosphine-2-2-amino-1-1-biphenyl-palladium-ii-methanesulfonate"
+          }
+        ]
+      },
+      {
+        "name": "General Chemical",
+        "slug": "general-chemical",
+        "url": "/general-chemical.html",
+        "products": [
+          {
+            "name": "2-Amino-2-Hydroxymethyl)Propane-1-,3-Diol Acetate Salt",
+            "slug": "2-amino-2-hydroxymethyl-propane-1-3-diol-acetate-salt",
+            "anchor": "#2-amino-2-hydroxymethyl-propane-1-3-diol-acetate-salt"
+          },
+          {
+            "name": "(4-R-Cis)-6-1-1dimethyl-6-Cyanomethyl-2,2-Dimethyl-1,3-Dioxane-4-Acetate  Ats-8",
+            "slug": "4-r-cis-6-1-1dimethyl-6-cyanomethyl-2-2-dimethyl-1-3-dioxane-4-acetate-ats-8",
+            "anchor": "#4-r-cis-6-1-1dimethyl-6-cyanomethyl-2-2-dimethyl-1-3-dioxane-4-acetate-ats-8"
+          },
+          {
+            "name": "2-acetamido-5- Fluorobenzoic Acid",
+            "slug": "2-acetamido-5-fluorobenzoic-acid",
+            "anchor": "#2-acetamido-5-fluorobenzoic-acid"
+          }
+        ]
+      },
+      {
+        "name": "Chloro Alkylamines",
+        "slug": "chloro-alkylamines",
+        "url": "/chloro-alkylamines.html",
+        "products": [
+          {
+            "name": "BIS(TRICYCLOHEXYLPHOSPHINE) BENZYLIDENE RUTHENIUM(IV) DICHLORIDE",
+            "slug": "bis-tricyclohexylphosphine-benzylidene-ruthenium-iv-dichloride",
+            "anchor": "#bis-tricyclohexylphosphine-benzylidene-ruthenium-iv-dichloride"
+          },
+          {
+            "name": "3-Aminocyclohexane Carboxylic Acid",
+            "slug": "3-aminocyclohexane-carboxylic-acid",
+            "anchor": "#3-aminocyclohexane-carboxylic-acid"
+          }
+        ]
+      },
+      {
+        "name": "Logistic Services",
+        "slug": "logistic-services",
+        "url": "/logistic-services.html",
+        "products": [
+          {
+            "name": "Adenosine Amine Congener",
+            "slug": "adenosine-amine-congener",
+            "anchor": "#adenosine-amine-congener"
+          },
+          {
+            "name": "3-Acetylphenyl Isocyanate",
+            "slug": "3-acetylphenyl-isocyanate",
+            "anchor": "#3-acetylphenyl-isocyanate"
+          },
+          {
+            "name": "2-Biphenylcarboxaldehyde",
+            "slug": "2-biphenylcarboxaldehyde",
+            "anchor": "#2-biphenylcarboxaldehyde"
+          }
+        ]
+      },
+      {
+        "name": "Azetidine Derivatives",
+        "slug": "azetidine-derivatives",
+        "url": "/azetidine-derivatives.html",
+        "products": [
+          {
+            "name": "O-(Benzotriazole-1-Yl)-N,N,N''N''-Tetramethyluronium Hexafluorophosphate",
+            "slug": "o-benzotriazole-1-yl-n-n-nn-tetramethyluronium-hexafluorophosphate",
+            "anchor": "#o-benzotriazole-1-yl-n-n-nn-tetramethyluronium-hexafluorophosphate"
+          },
+          {
+            "name": "O-Benzotriazol-1-Yl-N,N,N,N-Tetramethyluronium Tetrafluoroborate",
+            "slug": "o-benzotriazol-1-yl-n-n-n-n-tetramethyluronium-tetrafluoroborate",
+            "anchor": "#o-benzotriazol-1-yl-n-n-n-n-tetramethyluronium-tetrafluoroborate"
+          },
+          {
+            "name": "BIS (2-oxo-3-oxazolidinyl)Phosphinic Chloride",
+            "slug": "bis-2-oxo-3-oxazolidinyl-phosphinic-chloride",
+            "anchor": "#bis-2-oxo-3-oxazolidinyl-phosphinic-chloride"
+          }
+        ]
+      },
+      {
+        "name": "Anthranilamide Derivatives",
+        "slug": "anthranilamide-derivatives",
+        "url": "/anthranilamide-derivatives.html",
+        "products": [
+          {
+            "name": "3-Dimethylaminomethyl 1,2,3,9-Tetrahydro 9-Methyl4hcarbazole 4-Onehydrochloride",
+            "slug": "3-dimethylaminomethyl-1-2-3-9-tetrahydro-9-methyl4hcarbazole-4-onehydrochloride",
+            "anchor": "#3-dimethylaminomethyl-1-2-3-9-tetrahydro-9-methyl4hcarbazole-4-onehydrochloride"
+          },
+          {
+            "name": "4-(Aminomethyl)-5-Methyl-2,4-Dihydro-3h-Pyrazol-3-One Hydrochloride",
+            "slug": "4-aminomethyl-5-methyl-2-4-dihydro-3h-pyrazol-3-one-hydrochloride",
+            "anchor": "#4-aminomethyl-5-methyl-2-4-dihydro-3h-pyrazol-3-one-hydrochloride"
+          },
+          {
+            "name": "2-Deoxy-2,2-Difluoro-D-Erythro-Pentofuranous-1-Ulose-3,5-Dibenzoate",
+            "slug": "2-deoxy-2-2-difluoro-d-erythro-pentofuranous-1-ulose-3-5-dibenzoate",
+            "anchor": "#2-deoxy-2-2-difluoro-d-erythro-pentofuranous-1-ulose-3-5-dibenzoate"
+          }
+        ]
+      },
+      {
+        "name": "Benzyl Alcohols",
+        "slug": "benzyl-alcohols",
+        "url": "/benzyl-alcohols.html",
+        "products": [
+          {
+            "name": "4-Chlorobutyronitrile CAS No. 628-20-6.",
+            "slug": "4-chlorobutyronitrile-cas-no-628-20-6",
+            "anchor": "#4-chlorobutyronitrile-cas-no-628-20-6"
+          },
+          {
+            "name": "2-acetamido-5- Fluorobenzoic Acid",
+            "slug": "2-acetamido-5-fluorobenzoic-acid",
+            "anchor": "#2-acetamido-5-fluorobenzoic-acid"
+          }
+        ]
+      },
+      {
+        "name": "O-Phenylene Diamine Derivatives",
+        "slug": "o-phenylene-diamine-derivatives",
+        "url": "/o-phenylene-diamine-derivatives.html",
+        "products": [
+          {
+            "name": "4,4-Azobis(4-Cyanovaleric Acid)98% Cont. Ca 18%Water",
+            "slug": "4-4-azobis-4-cyanovaleric-acid-98-cont-ca-18-water",
+            "anchor": "#4-4-azobis-4-cyanovaleric-acid-98-cont-ca-18-water"
+          }
+        ]
+      },
+      {
+        "name": "Aluminium Chlorohydrate",
+        "slug": "aluminium-chlorohydrate",
+        "url": "/aluminium-chlorohydrate.html",
+        "products": [
+          {
+            "name": "2-AMINO-4-IMINO-2-THIAZOLINE HYDROCHLORIDE",
+            "slug": "2-amino-4-imino-2-thiazoline-hydrochloride",
+            "anchor": "#2-amino-4-imino-2-thiazoline-hydrochloride"
+          },
+          {
+            "name": "2-Amino-5-7-Chloroquinolin-4-yl Thio-1,3,4-Thiadazole",
+            "slug": "2-amino-5-7-chloroquinolin-4-yl-thio-1-3-4-thiadazole",
+            "anchor": "#2-amino-5-7-chloroquinolin-4-yl-thio-1-3-4-thiadazole"
+          },
+          {
+            "name": "4-Amino-6-Mercaptopyrazolo-3,4-D-Pyrimidine",
+            "slug": "4-amino-6-mercaptopyrazolo-3-4-d-pyrimidine",
+            "anchor": "#4-amino-6-mercaptopyrazolo-3-4-d-pyrimidine"
+          }
+        ]
+      },
+      {
+        "name": "Food Chemical",
+        "slug": "food-chemical",
+        "url": "/food-chemical.html",
+        "products": [
+          {
+            "name": "Copper Phthalocyanine-3,4,4,4-Tetrasulfonic Acid Tetrasodium Salt",
+            "slug": "copper-phthalocyanine-3-4-4-4-tetrasulfonic-acid-tetrasodium-salt",
+            "anchor": "#copper-phthalocyanine-3-4-4-4-tetrasulfonic-acid-tetrasodium-salt"
+          },
+          {
+            "name": "2-AMINO-2-(2-METHOXYPHENYL)ACETIC ACID",
+            "slug": "2-amino-2-2-methoxyphenyl-acetic-acid",
+            "anchor": "#2-amino-2-2-methoxyphenyl-acetic-acid"
+          },
+          {
+            "name": "2-acetyl-5,5-dimethyl-1,3- Cyclohexanedione",
+            "slug": "2-acetyl-5-5-dimethyl-1-3-cyclohexanedione",
+            "anchor": "#2-acetyl-5-5-dimethyl-1-3-cyclohexanedione"
+          }
+        ]
+      },
+  
+      {
+        "name": "Benzyl Chlorides",
+        "slug": "benzyl-chlorides",
+        "url": "/benzyl-chlorides.html",
+        "products": [
+          {
+            "name": "2-Aminomethylbenzimidazole Dihydrochloride",
+            "slug": "2-aminomethylbenzimidazole-dihydrochloride",
+            "anchor": "#2-aminomethylbenzimidazole-dihydrochloride"
+          },
+          {
+            "name": "4-Benzyloxybutyric Acid",
+            "slug": "4-benzyloxybutyric-acid",
+            "anchor": "#4-benzyloxybutyric-acid"
+          },
+          {
+            "name": "11-Bromoundecanoic Acid",
+            "slug": "11-bromoundecanoic-acid",
+            "anchor": "#11-bromoundecanoic-acid"
+          }
+        ]
+      },
+  
+      {
+        "name": "Porphyrine",
+        "slug": "porphyrine",
+        "url": "/porphyrine.html",
+        "products": [
+          {
+            "name": "5-Amino-3-Cyano-1- 2,6-Dichloro-4- Trifluoromethyl Phenyl Pyrazole",
+            "slug": "5-amino-3-cyano-1-2-6-dichloro-4-trifluoromethyl-phenyl-pyrazole",
+            "anchor": "#5-amino-3-cyano-1-2-6-dichloro-4-trifluoromethyl-phenyl-pyrazole"
+          },
+          {
+            "name": "(2s)-2-Amino-2-(3-Methyl-1,2,4-Oxadiazol-5-Yl)Ethanol, 1hydrochloride",
+            "slug": "2s-2-amino-2-3-methyl-1-2-4-oxadiazol-5-yl-ethanol-1hydrochloride",
+            "anchor": "#2s-2-amino-2-3-methyl-1-2-4-oxadiazol-5-yl-ethanol-1hydrochloride"
+          },
+          {
+            "name": "3-(1,1-Dimethylethyl)-4-Methyl-(R,S)-2,2-Dimethyl-3,4-Oxazolidine Dicarboxylate",
+            "slug": "3-1-1-dimethylethyl-4-methyl-r-s-2-2-dimethyl-3-4-oxazolidine-dicarboxylate",
+            "anchor": "#3-1-1-dimethylethyl-4-methyl-r-s-2-2-dimethyl-3-4-oxazolidine-dicarboxylate"
+          }
+        ]
+      },
+  
+      {
+        "name": "Sweeteners And Polyols",
+        "slug": "sweeteners-and-polyols",
+        "url": "/sweeteners-and-polyols.html",
+        "products": [
+          {
+            "name": "Benzotriazol-1-yloxytripyrrolidinophosphonium Hexafluorophosphate",
+            "slug": "benzotriazol-1-yloxytripyrrolidinophosphonium-hexafluorophosphate",
+            "anchor": "#benzotriazol-1-yloxytripyrrolidinophosphonium-hexafluorophosphate"
+          },
+          {
+            "name": "Benzotriazol-1-yloxytrisdimethylaminophosphonium Hexafluorophosphate",
+            "slug": "benzotriazol-1-yloxytrisdimethylaminophosphonium-hexafluorophosphate",
+            "anchor": "#benzotriazol-1-yloxytrisdimethylaminophosphonium-hexafluorophosphate"
+          },
+          {
+            "name": "2-acetamido-5- Fluorobenzoic Acid",
+            "slug": "2-acetamido-5-fluorobenzoic-acid",
+            "anchor": "#2-acetamido-5-fluorobenzoic-acid"
+          }
+        ]
+      },
+  
+      {
+        "name": "Benzene",
+        "slug": "benzene",
+        "url": "/benzene.html",
+        "products": [
+          {
+            "name": "Alginic Acid Sodium",
+            "slug": "alginic-acid-sodium",
+            "anchor": "#alginic-acid-sodium"
+          },
+          {
+            "name": "2-AMINO-3-HYDROXYPYRIDINE",
+            "slug": "2-amino-3-hydroxypyridine",
+            "anchor": "#2-amino-3-hydroxypyridine"
+          },
+          {
+            "name": "1-(2-Aminoethyl) Piperidine",
+            "slug": "1-2-aminoethyl-piperidine",
+            "anchor": "#1-2-aminoethyl-piperidine"
+          }
+        ]
+      },
+  
+      {
+        "name": "Additives And Ingredients",
+        "slug": "additives-and-ingredients",
+        "url": "/additives-and-ingredients.html",
+        "products": [
+          {
+            "name": "2- Chloro-4-( Methylsulfonyl)aniline",
+            "slug": "2-chloro-4-methylsulfonyl-aniline",
+            "anchor": "#2-chloro-4-methylsulfonyl-aniline"
+          },
+          {
+            "name": "3-Amino-1-((4-Fluorophenyl) Methyl)Thiourea",
+            "slug": "3-amino-1-4-fluorophenyl-methyl-thiourea",
+            "anchor": "#3-amino-1-4-fluorophenyl-methyl-thiourea"
+          },
+          {
+            "name": "4-Amino-3,5-Dichloroacetophenone",
+            "slug": "4-amino-3-5-dichloroacetophenone",
+            "anchor": "#4-amino-3-5-dichloroacetophenone"
+          }
+        ]
+      },
+  
+      {
+        "name": "Casno",
+        "slug": "casno",
+        "url": "/casno.html",
+        "products": [
+          {
+            "name": "6-Bromo-2-Chloro-8-Cyclopentyl-5-Methyl Pyrido[2,3-D]Pyrimidin-7(8h)-One",
+            "slug": "6-bromo-2-chloro-8-cyclopentyl-5-methyl-pyrido-2-3-d-pyrimidin-7-8h-one",
+            "anchor": "#6-bromo-2-chloro-8-cyclopentyl-5-methyl-pyrido-2-3-d-pyrimidin-7-8h-one"
+          },
+          {
+            "name": "4,4,6-Dimethoxy-1,3,5-Triazin-2-Yl-4-Methylmorpholinium Chloride",
+            "slug": "4-4-6-dimethoxy-1-3-5-triazin-2-yl-4-methylmorpholinium-chloride",
+            "anchor": "#4-4-6-dimethoxy-1-3-5-triazin-2-yl-4-methylmorpholinium-chloride"
+          }
+        ]
+      },
+  
+      {
+        "name": "Pharmaceuticals Tablet",
+        "slug": "pharmaceuticals-tablet",
+        "url": "/pharmaceuticals-tablet.html",
+        "products": [
+          {
+            "name": "2- Chloromethylquinoline Monohydrochloride",
+            "slug": "2-chloromethylquinoline-monohydrochloride",
+            "anchor": "#2-chloromethylquinoline-monohydrochloride"
+          },
+          {
+            "name": "5-Bromovanillin",
+            "slug": "5-bromovanillin",
+            "anchor": "#5-bromovanillin"
+          }
+        ]
+      },
+  
+      {
+        "name": "Moisture Absorber",
+        "slug": "moisture-absorber",
+        "url": "/moisture-absorber.html",
+        "products": [
+          {
+            "name": "N-acetylmuramyl-l-alanyl-d- Isoglutamine Hydrate",
+            "slug": "n-acetylmuramyl-l-alanyl-d-isoglutamine-hydrate",
+            "anchor": "#n-acetylmuramyl-l-alanyl-d-isoglutamine-hydrate"
+          },
+          {
+            "name": "4-Amino-3,5-Dichlorobenzonitrile",
+            "slug": "4-amino-3-5-dichlorobenzonitrile",
+            "anchor": "#4-amino-3-5-dichlorobenzonitrile"
+          },
+          {
+            "name": "Bismuth Hydroxide",
+            "slug": "bismuth-hydroxide",
+            "anchor": "#bismuth-hydroxide"
+          }
+        ]
+      },
+  
+      {
+        "name": "Fluoro Specialities",
+        "slug": "fluoro-specialities",
+        "url": "/fluoro-specialities.html",
+        "products": [
+          {
+            "name": "BIOTIN AMIDOHEXANOIC ACID-N-HYDROXYSUCCINIMIDE ESTER",
+            "slug": "biotin-amidohexanoic-acid-n-hydroxysuccinimide-ester",
+            "anchor": "#biotin-amidohexanoic-acid-n-hydroxysuccinimide-ester"
+          },
+          {
+            "name": "2-Bromo-6-Methoxyaniline",
+            "slug": "2-bromo-6-methoxyaniline",
+            "anchor": "#2-bromo-6-methoxyaniline"
+          },
+          {
+            "name": "2-bromo-6-fluoronaphthalene",
+            "slug": "2-bromo-6-fluoronaphthalene",
+            "anchor": "#2-bromo-6-fluoronaphthalene"
+          }
+        ]
+      },
+  
+      {
+        "name": "Indoles",
+        "slug": "indoles",
+        "url": "/indoles.html",
+        "products": [
+          {
+            "name": "3-Amino-5-Mercapto-1,2,4-Triazole",
+            "slug": "3-amino-5-mercapto-1-2-4-triazole",
+            "anchor": "#3-amino-5-mercapto-1-2-4-triazole"
+          },
+          {
+            "name": "2-Amino-4-Bromobenzophenone",
+            "slug": "2-amino-4-bromobenzophenone",
+            "anchor": "#2-amino-4-bromobenzophenone"
+          },
+          {
+            "name": "N-Acetyl-L-Glutamine",
+            "slug": "n-acetyl-l-glutamine",
+            "anchor": "#n-acetyl-l-glutamine"
+          }
+        ]
+      },
+  
+      {
+        "name": "Isonitrile Derivatives",
+        "slug": "isonitrile-derivatives",
+        "url": "/isonitrile-derivatives.html",
+        "products": [
+          {
+            "name": "Trans-4-Aminocyclohexanecarboxylic Acid",
+            "slug": "trans-4-aminocyclohexanecarboxylic-acid",
+            "anchor": "#trans-4-aminocyclohexanecarboxylic-acid"
+          },
+          {
+            "name": "3-AMINOPYRIDINE-4-CARBOXYLIC ACID",
+            "slug": "3-aminopyridine-4-carboxylic-acid",
+            "anchor": "#3-aminopyridine-4-carboxylic-acid"
+          },
+          {
+            "name": "BENZENE SULFONIC ACID",
+            "slug": "benzene-sulfonic-acid",
+            "anchor": "#benzene-sulfonic-acid"
+          }
+        ]
+      },
+  
+      {
+        "name": "Chemical Powder",
+        "slug": "chemical-powder",
+        "url": "/chemical-powder.html",
+        "products": [
+          {
+            "name": "Adipic Acid Nitrile",
+            "slug": "adipic-acid-nitrile",
+            "anchor": "#adipic-acid-nitrile"
+          },
+          {
+            "name": "Adenylosuccinic Acid Sodium",
+            "slug": "adenylosuccinic-acid-sodium",
+            "anchor": "#adenylosuccinic-acid-sodium"
+          },
+          {
+            "name": "Copper (ii) Chloride Anhydrous",
+            "slug": "copper-ii-chloride-anhydrous",
+            "anchor": "#copper-ii-chloride-anhydrous"
+          }
+        ]
+      },
+  
+      {
+        "name": "Pharmaceutical Injection",
+        "slug": "pharmaceutical-injection",
+        "url": "/pharmaceutical-injection.html",
+        "products": [
+          {
+            "name": "Anti-Mouse IgG (Whole Molecule)-Biotin, Antibody Produced In Rabbit",
+            "slug": "anti-mouse-igg-whole-molecule-biotin-antibody-produced-in-rabbit",
+            "anchor": "#anti-mouse-igg-whole-molecule-biotin-antibody-produced-in-rabbit"
+          },
+          {
+            "name": "Glycine Methyl Ester Hydrochloride   5680-79-5",
+            "slug": "glycine-methyl-ester-hydrochloride-5680-79-5",
+            "anchor": "#glycine-methyl-ester-hydrochloride-5680-79-5"
+          },
+          {
+            "name": "DDGTP Trilithium Salt",
+            "slug": "ddgtp-trilithium-salt",
+            "anchor": "#ddgtp-trilithium-salt"
+          }
+        ]
+      },
+  
+      {
+        "name": "Tricyclic Derivatives",
+        "slug": "tricyclic-derivatives",
+        "url": "/tricyclic-derivatives.html",
+        "products": [
+          {
+            "name": "N-2-Acetylguanine",
+            "slug": "n-2-acetylguanine",
+            "anchor": "#n-2-acetylguanine"
+          },
+          {
+            "name": "S - +-2-Aminoheptane",
+            "slug": "s-2-aminoheptane",
+            "anchor": "#s-2-aminoheptane"
+          },
+          {
+            "name": "Adenylyl Cyclase",
+            "slug": "adenylyl-cyclase",
+            "anchor": "#adenylyl-cyclase"
+          }
+        ]
+      },
+  
+      {
+        "name": "Pharmaceutical Chemicals",
+        "slug": "pharmaceutical-chemicals",
+        "url": "/pharmaceutical-chemicals.html",
+        "products": [
+          {
+            "name": "Copper Trifluoromethanesulfonate Toluene Complex",
+            "slug": "copper-trifluoromethanesulfonate-toluene-complex",
+            "anchor": "#copper-trifluoromethanesulfonate-toluene-complex"
+          },
+          {
+            "name": "4-Amino-6-Methoxy-2-Methylquinoline",
+            "slug": "4-amino-6-methoxy-2-methylquinoline",
+            "anchor": "#4-amino-6-methoxy-2-methylquinoline"
+          },
+          {
+            "name": "Acetic Hydrazide",
+            "slug": "acetic-hydrazide",
+            "anchor": "#acetic-hydrazide"
+          }
+        ]
+      },
+  
+      {
+        "name": "Active Pharmaceutical Ingredients",
+        "slug": "active-pharmaceutical-ingredients",
+        "url": "/active-pharmaceutical-ingredients.html",
+        "products": [
+          {
+            "name": "(Z)-2-(2-Aminothiazole-4-yl)-2-(Tert-Butoxycarbonylmethoxyimino)Acetic Acid",
+            "slug": "z-2-2-aminothiazole-4-yl-2-tert-butoxycarbonylmethoxyimino-acetic-acid",
+            "anchor": "#z-2-2-aminothiazole-4-yl-2-tert-butoxycarbonylmethoxyimino-acetic-acid"
+          },
+          {
+            "name": "Cefpirome Sulfate (CEF4)",
+            "slug": "cefpirome-sulfate-cef4",
+            "anchor": "#cefpirome-sulfate-cef4"
+          },
+          {
+            "name": "3-BROMOACETOPHENONE",
+            "slug": "3-bromoacetophenone",
+            "anchor": "#3-bromoacetophenone"
+          }
+        ]
+      },
+  
+      {
+        "name": "Chlorine Dioxide",
+        "slug": "chlorine-dioxide",
+        "url": "/chlorine-dioxide.html",
+        "products": [
+          {
+            "name": "Acetone Dicarboxylic Acid Dimethyl Ester",
+            "slug": "acetone-dicarboxylic-acid-dimethyl-ester",
+            "anchor": "#acetone-dicarboxylic-acid-dimethyl-ester"
+          },
+          {
+            "name": "Adenosine-5-b-thiodiphosphate Lithium Salt",
+            "slug": "adenosine-5-b-thiodiphosphate-lithium-salt",
+            "anchor": "#adenosine-5-b-thiodiphosphate-lithium-salt"
+          },
+          {
+            "name": "2-Amino-3,5-Dibromobenzaldehyde",
+            "slug": "2-amino-3-5-dibromobenzaldehyde",
+            "anchor": "#2-amino-3-5-dibromobenzaldehyde"
+          }
+        ]
+      },
+  
+      {
+        "name": "Cyclo Alkanes",
+        "slug": "cyclo-alkanes",
+        "url": "/cyclo-alkanes.html",
+        "products": [
+          {
+            "name": "1-amino-1-Cyclobutane Carboxylic Acid",
+            "slug": "1-amino-1-cyclobutane-carboxylic-acid",
+            "anchor": "#1-amino-1-cyclobutane-carboxylic-acid"
+          },
+          {
+            "name": "DIBENZOYL-D-TARTARIC ACID MONOHYDRATE",
+            "slug": "dibenzoyl-d-tartaric-acid-monohydrate",
+            "anchor": "#dibenzoyl-d-tartaric-acid-monohydrate"
+          },
+          {
+            "name": "6-BROMO-2-NAPHTHYLSULFATE POTASSIUM SALT",
+            "slug": "6-bromo-2-naphthylsulfate-potassium-salt",
+            "anchor": "#6-bromo-2-naphthylsulfate-potassium-salt"
+          }
+        ]
+      },
+  
+      {
+        "name": "Culture Media",
+        "slug": "culture-media",
+        "url": "/culture-media.html",
+        "products": [
+          {
+            "name": "2-AMINOQUINOLINE",
+            "slug": "2-aminoquinoline",
+            "anchor": "#2-aminoquinoline"
+          },
+          {
+            "name": "BROMOMALONALDEHYDE",
+            "slug": "bromomalonaldehyde",
+            "anchor": "#bromomalonaldehyde"
+          }
+        ]
+      },
+  
+      {
+        "name": "Pyridines",
+        "slug": "pyridines",
+        "url": "/pyridines.html",
+        "products": [
+          {
+            "name": "6-Bromo-3-Oxo-3,4-Dihydro-2h-1,4-Benzoxazine-7-Sulfonyl Chloride",
+            "slug": "6-bromo-3-oxo-3-4-dihydro-2h-1-4-benzoxazine-7-sulfonyl-chloride",
+            "anchor": "#6-bromo-3-oxo-3-4-dihydro-2h-1-4-benzoxazine-7-sulfonyl-chloride"
+          },
+          {
+            "name": "4-(3,4-Dichlorophenyl) 3,4-Dihydro-1-(2h)-Naphthalenone(Tetralone)",
+            "slug": "4-3-4-dichlorophenyl-3-4-dihydro-1-2h-naphthalenone-tetralone",
+            "anchor": "#4-3-4-dichlorophenyl-3-4-dihydro-1-2h-naphthalenone-tetralone"
+          }
+        ]
+      },
+  
+      {
+        "name": "Physical Properties Of Pure Product",
+        "slug": "physical-properties-of-pure-product",
+        "url": "/physical-properties-of-pure-product.html",
+        "products": [
+          {
+            "name": "5-AMINOPYRIDINE-2-CARBOXYLIC ACID",
+            "slug": "5-aminopyridine-2-carboxylic-acid",
+            "anchor": "#5-aminopyridine-2-carboxylic-acid"
+          },
+          {
+            "name": "3-O-Benzyl 15,16-Dehydro Estrone",
+            "slug": "3-o-benzyl-15-16-dehydro-estrone",
+            "anchor": "#3-o-benzyl-15-16-dehydro-estrone"
+          },
+          {
+            "name": "Copper-2-ethylhexanoate",
+            "slug": "copper-2-ethylhexanoate",
+            "anchor": "#copper-2-ethylhexanoate"
+          }
+        ]
+      },
+  
+      {
+        "name": "Chloramine T",
+        "slug": "chloramine-t",
+        "url": "/chloramine-t.html",
+        "products": [
+          {
+            "name": "4-Amino-2,3-Dihydroindole-1-Carboxylic Acid-tert-butyl Ester",
+            "slug": "4-amino-2-3-dihydroindole-1-carboxylic-acid-tert-butyl-ester",
+            "anchor": "#4-amino-2-3-dihydroindole-1-carboxylic-acid-tert-butyl-ester"
+          },
+          {
+            "name": "4-Amino-2-Fluorobenzoic Acid",
+            "slug": "4-amino-2-fluorobenzoic-acid",
+            "anchor": "#4-amino-2-fluorobenzoic-acid"
+          },
+          {
+            "name": "2-Amino-4-Fluorobenzonitrile",
+            "slug": "2-amino-4-fluorobenzonitrile",
+            "anchor": "#2-amino-4-fluorobenzonitrile"
+          }
+        ]
+      },
+  
+      {
+        "name": "Fertilizer",
+        "slug": "fertilizer",
+        "url": "/fertilizer.html",
+        "products": [
+          {
+            "name": "BOC-D-ASN Content Of L-Form: 0.036%",
+            "slug": "boc-d-asn-content-of-l-form-0-036",
+            "anchor": "#boc-d-asn-content-of-l-form-0-036"
+          },
+          {
+            "name": "(3-AMINOPHENYL)METHANOL",
+            "slug": "3-aminophenyl-methanol",
+            "anchor": "#3-aminophenyl-methanol"
+          },
+          {
+            "name": "(R)-(+)-3-Aminoquinuclidine Dihydrochloride",
+            "slug": "r-3-aminoquinuclidine-dihydrochloride",
+            "anchor": "#r-3-aminoquinuclidine-dihydrochloride"
+          }
+        ]
+      },
+  
+      {
+        "name": "Hexamine",
+        "slug": "hexamine",
+        "url": "/hexamine.html",
+        "products": [
+          {
+            "name": "Monobenzyl Phthalate",
+            "slug": "monobenzyl-phthalate",
+            "anchor": "#monobenzyl-phthalate"
+          },
+          {
+            "name": "A-Bromo-2-Tolunitrile",
+            "slug": "a-bromo-2-tolunitrile",
+            "anchor": "#a-bromo-2-tolunitrile"
+          },
+          {
+            "name": "3-AMINO-2-METHOXYBENZOIC ACID",
+            "slug": "3-amino-2-methoxybenzoic-acid",
+            "anchor": "#3-amino-2-methoxybenzoic-acid"
+          }
+        ]
+      },
+  
+      {
+        "name": "Titanates",
+        "slug": "titanates",
+        "url": "/titanates.html",
+        "products": [
+          {
+            "name": "4-acetamido Benzaldehyde Thiosemicarbazone",
+            "slug": "4-acetamido-benzaldehyde-thiosemicarbazone",
+            "anchor": "#4-acetamido-benzaldehyde-thiosemicarbazone"
+          },
+          {
+            "name": "2,2-Aminoethylpyridine",
+            "slug": "2-2-aminoethylpyridine",
+            "anchor": "#2-2-aminoethylpyridine"
+          },
+          {
+            "name": "Benzylbromide",
+            "slug": "benzylbromide",
+            "anchor": "#benzylbromide"
+          }
+        ]
+      },
+  
+      {
+        "name": "Pyridine",
+        "slug": "pyridine",
+        "url": "/pyridine.html",
+        "products": [
+          {
+            "name": "3,2-aminoethylpyridine Dihydrobromide",
+            "slug": "3-2-aminoethylpyridine-dihydrobromide",
+            "anchor": "#3-2-aminoethylpyridine-dihydrobromide"
+          },
+          {
+            "name": "2-Amino-3-Chloro-5-(Trifluoromethyl)Pyridine",
+            "slug": "2-amino-3-chloro-5-trifluoromethyl-pyridine",
+            "anchor": "#2-amino-3-chloro-5-trifluoromethyl-pyridine"
+          }
+        ]
+      },
+  
+      {
+        "name": "Iron Protein Compound",
+        "slug": "iron-protein-compound",
+        "url": "/iron-protein-compound.html",
+        "products": [
+          {
+            "name": "Allura Red Ac",
+            "slug": "allura-red-ac",
+            "anchor": "#allura-red-ac"
+          },
+          {
+            "name": "2-Acetylcyclohexanone",
+            "slug": "2-acetylcyclohexanone",
+            "anchor": "#2-acetylcyclohexanone"
+          },
+          {
+            "name": "2-adamantanol",
+            "slug": "2-adamantanol",
+            "anchor": "#2-adamantanol"
+          }
+        ]
+      },
+  
+      {
+        "name": "Test Kits",
+        "slug": "test-kits",
+        "url": "/test-kits.html",
+        "products": [
+          {
+            "name": "ANTI-GOAT IgG(WHOLE MOLECULE) PEROXIDASE CONJUGATE",
+            "slug": "anti-goat-igg-whole-molecule-peroxidase-conjugate",
+            "anchor": "#anti-goat-igg-whole-molecule-peroxidase-conjugate"
+          },
+          {
+            "name": "Anti Rabbit IGG",
+            "slug": "anti-rabbit-igg",
+            "anchor": "#anti-rabbit-igg"
+          },
+          {
+            "name": "ANTI MOUSE IGG",
+            "slug": "anti-mouse-igg",
+            "anchor": "#anti-mouse-igg"
+          }
+        ]
+      },
+  
+      {
+        "name": "Rapid Test Antibodies",
+        "slug": "rapid-test-antibodies",
+        "url": "/rapid-test-antibodies.html",
+        "products": [
+          {
+            "name": "ANTI SHEEP IgG (WHOLE MOLECULAR)",
+            "slug": "anti-sheep-igg-whole-molecular",
+            "anchor": "#anti-sheep-igg-whole-molecular"
+          },
+          {
+            "name": "ANTI MOUSE IGM",
+            "slug": "anti-mouse-igm",
+            "anchor": "#anti-mouse-igm"
+          },
+          {
+            "name": "ANTI CHICKEN IGY",
+            "slug": "anti-chicken-igy",
+            "anchor": "#anti-chicken-igy"
+          }
+        ]
+      },
+  
+      {
+        "name": "Pharmaceutical Capsules",
+        "slug": "pharmaceutical-capsules",
+        "url": "/pharmaceutical-capsules.html",
+        "products": [
+          {
+            "name": "CALCIUM LACTOBIONATE",
+            "slug": "calcium-lactobionate",
+            "anchor": "#calcium-lactobionate"
+          },
+          {
+            "name": "CALCIUM GLYCEROPHOSPHATE",
+            "slug": "calcium-glycerophosphate",
+            "anchor": "#calcium-glycerophosphate"
+          },
+          {
+            "name": "CALCIUM OROTATE",
+            "slug": "calcium-orotate",
+            "anchor": "#calcium-orotate"
+          }
+        ]
+      },
+  
+      {
+        "name": "Boronic acids and Pinacol Esters",
+        "slug": "boronic-acids-and-pinacol-esters",
+        "url": "/boronic-acids-and-pinacol-esters.html",
+        "products": [
+          {
+            "name": "4-Amino-3- Fluorophenylboronic Acid Pinacol Ester",
+            "slug": "4-amino-3-fluorophenylboronic-acid-pinacol-ester",
+            "anchor": "#4-amino-3-fluorophenylboronic-acid-pinacol-ester"
+          },
+          {
+            "name": "4-Amino-2-5- Difluorobenzeneboronic Acid Pinacol Ester",
+            "slug": "4-amino-2-5-difluorobenzeneboronic-acid-pinacol-ester",
+            "anchor": "#4-amino-2-5-difluorobenzeneboronic-acid-pinacol-ester"
+          },
+          {
+            "name": "2-AMINO-5-ETHYL-1,3,4-  THIADIAZOLE",
+            "slug": "2-amino-5-ethyl-1-3-4-thiadiazole",
+            "anchor": "#2-amino-5-ethyl-1-3-4-thiadiazole"
+          }
+        ]
+      },
+  
+      {
+        "name": "Essential Oil",
+        "slug": "essential-oil",
+        "url": "/essential-oil.html",
+        "products": [
+          {
+            "name": "Cis-2-Aminocyclohexanol Hydrochloride",
+            "slug": "cis-2-aminocyclohexanol-hydrochloride",
+            "anchor": "#cis-2-aminocyclohexanol-hydrochloride"
+          },
+          {
+            "name": "Cognac Oil",
+            "slug": "cognac-oil",
+            "anchor": "#cognac-oil"
+          },
+          {
+            "name": "COPAIBA BALSAM OIL",
+            "slug": "copaiba-balsam-oil",
+            "anchor": "#copaiba-balsam-oil"
+          }
+        ]
+      },
+  
+      {
+        "name": "Solvents & Chemicals",
+        "slug": "solvents-chemicals",
+        "url": "/solvents-chemicals.html",
+        "products": [
+          {
+            "name": "Carfentrazone Ethyl",
+            "slug": "carfentrazone-ethyl",
+            "anchor": "#carfentrazone-ethyl"
+          },
+          {
+            "name": "2-acetyl-1-methylpyrrole",
+            "slug": "2-acetyl-1-methylpyrrole",
+            "anchor": "#2-acetyl-1-methylpyrrole"
+          },
+          {
+            "name": "Bromophos Ethyl",
+            "slug": "bromophos-ethyl",
+            "anchor": "#bromophos-ethyl"
+          }
+        ]
+      },
+  
+      {
+        "name": "Gluconic Acid",
+        "slug": "gluconic-acid",
+        "url": "/gluconic-acid.html",
+        "products": [
+          {
+            "name": "D-(+)-Cellobiose",
+            "slug": "d-cellobiose",
+            "anchor": "#d-cellobiose"
+          },
+          {
+            "name": "Benzhydrylchloride",
+            "slug": "benzhydrylchloride",
+            "anchor": "#benzhydrylchloride"
+          },
+          {
+            "name": "L-Alliin",
+            "slug": "l-alliin",
+            "anchor": "#l-alliin"
+          }
+        ]
+      },
+  
+      {
+        "name": "Agriculture Fungicide",
+        "slug": "agriculture-fungicide",
+        "url": "/agriculture-fungicide.html",
+        "products": [
+          {
+            "name": "3-ANILINOPROPIONITRILE",
+            "slug": "3-anilinopropionitrile",
+            "anchor": "#3-anilinopropionitrile"
+          },
+          {
+            "name": "AMMONIUM ALGINATE",
+            "slug": "ammonium-alginate",
+            "anchor": "#ammonium-alginate"
+          },
+          {
+            "name": "Carbosulfan",
+            "slug": "carbosulfan",
+            "anchor": "#carbosulfan"
+          }
+        ]
+      },
+  
+      {
+        "name": "Textile Chemicals",
+        "slug": "textile-chemicals",
+        "url": "/textile-chemicals.html",
+        "products": [
+          {
+            "name": "9-Anthracenemethanol",
+            "slug": "9-anthracenemethanol",
+            "anchor": "#9-anthracenemethanol"
+          },
+          {
+            "name": "2-ANILINOPHENYLACETIC ACID",
+            "slug": "2-anilinophenylacetic-acid",
+            "anchor": "#2-anilinophenylacetic-acid"
+          },
+          {
+            "name": "Cobalt (ii) Iodide Anhydrous",
+            "slug": "cobalt-ii-iodide-anhydrous",
+            "anchor": "#cobalt-ii-iodide-anhydrous"
+          }
+        ]
+      },
+  
+      {
+        "name": "EDTA",
+        "slug": "edta",
+        "url": "/edta.html",
+        "products": [
+          {
+            "name": "1-AMINOINDANE",
+            "slug": "1-aminoindane",
+            "anchor": "#1-aminoindane"
+          },
+          {
+            "name": "N,N-Diethylglycine Sodium Salt",
+            "slug": "n-n-diethylglycine-sodium-salt",
+            "anchor": "#n-n-diethylglycine-sodium-salt"
+          },
+          {
+            "name": "COBALT PHTHALOCYANINE",
+            "slug": "cobalt-phthalocyanine",
+            "anchor": "#cobalt-phthalocyanine"
+          }
+        ]
+      },
+  
+      {
+        "name": "Lipid Chemicals",
+        "slug": "lipid-chemicals",
+        "url": "/lipid-chemicals.html",
+        "products": [
+          {
+            "name": "Benzyl-2-bromoacetate",
+            "slug": "benzyl-2-bromoacetate",
+            "anchor": "#benzyl-2-bromoacetate"
+          },
+          {
+            "name": "CROTONALDEHYDE",
+            "slug": "crotonaldehyde",
+            "anchor": "#crotonaldehyde"
+          }
+        ]
+      },
+  
+      {
+        "name": "Nitric Acid",
+        "slug": "nitric-acid",
+        "url": "/nitric-acid.html",
+        "products": [
+          {
+            "name": "R-o-acetylmandelic Acid",
+            "slug": "r-o-acetylmandelic-acid",
+            "anchor": "#r-o-acetylmandelic-acid"
+          },
+          {
+            "name": "CITRACONIC ACID",
+            "slug": "citraconic-acid",
+            "anchor": "#citraconic-acid"
+          }
+        ]
+      },
+  
+      {
+        "name": "Industrial Acids",
+        "slug": "industrial-acids",
+        "url": "/industrial-acids.html",
+        "products": [
+          {
+            "name": "Dimethylmalonic Acid",
+            "slug": "dimethylmalonic-acid",
+            "anchor": "#dimethylmalonic-acid"
+          },
+          {
+            "name": "CITRONELLIC ACID",
+            "slug": "citronellic-acid",
+            "anchor": "#citronellic-acid"
+          }
+        ]
+      },
+  
+      {
+        "name": "Bio Pesticide",
+        "slug": "bio-pesticide",
+        "url": "/bio-pesticide.html",
+        "products": [
+          {
+            "name": "3-Aminobenzoylmethylamide",
+            "slug": "3-aminobenzoylmethylamide",
+            "anchor": "#3-aminobenzoylmethylamide"
+          },
+          {
+            "name": "BUTACHLOR",
+            "slug": "butachlor",
+            "anchor": "#butachlor"
+          }
+        ]
+      },
+  
+      {
+        "name": "Edible Oils",
+        "slug": "edible-oils",
+        "url": "/edible-oils.html",
+        "products": [
+          {
+            "name": "CINNAMON OIL",
+            "slug": "cinnamon-oil",
+            "anchor": "#cinnamon-oil"
+          },
+          {
+            "name": "COTTONSEED OIL",
+            "slug": "cottonseed-oil",
+            "anchor": "#cottonseed-oil"
+          },
+          {
+            "name": "Almond Oil",
+            "slug": "almond-oil",
+            "anchor": "#almond-oil"
+          }
+        ]
+      },
+  
+      {
+        "name": "Metal Powders",
+        "slug": "metal-powders",
+        "url": "/metal-powders.html",
+        "products": [
+          {
+            "name": "Calcium Metal Powder",
+            "slug": "calcium-metal-powder",
+            "anchor": "#calcium-metal-powder"
+          },
+          {
+            "name": "BRASS POWDER",
+            "slug": "brass-powder",
+            "anchor": "#brass-powder"
+          }
+        ]
+      },
+  
+      {
+        "name": "Ammonia",
+        "slug": "ammonia",
+        "url": "/ammonia.html",
+        "products": [
+          {
+            "name": "Acetaldehyde Ammonia Trimer",
+            "slug": "acetaldehyde-ammonia-trimer",
+            "anchor": "#acetaldehyde-ammonia-trimer"
+          }
+        ]
+      },
+  
+      {
+        "name": "Api Powder",
+        "slug": "api-powder",
+        "url": "/api-powder.html",
+        "products": [
+          {
+            "name": "Acarbose",
+            "slug": "acarbose",
+            "anchor": "#acarbose"
+          }
+        ]
+      },
+  
+      {
+        "name": "Drug Intermediate",
+        "slug": "drug-intermediate",
+        "url": "/drug-intermediate.html",
+        "products": [
+          {
+            "name": "1-Deoxy-1-Morpholino-D-Fructoside",
+            "slug": "1-deoxy-1-morpholino-d-fructoside",
+            "anchor": "#1-deoxy-1-morpholino-d-fructoside"
+          }
+        ]
+      },
+  
+      {
+        "name": "Anti Histamine",
+        "slug": "anti-histamine",
+        "url": "/anti-histamine.html",
+        "products": [
+          {
+            "name": "(S)-(-)-3-Aminoquinuclidine Dihydrochloride",
+            "slug": "s-3-aminoquinuclidine-dihydrochloride",
+            "anchor": "#s-3-aminoquinuclidine-dihydrochloride"
+          }
+        ]
+      },
+  
+      {
+        "name": "Reactive Dye",
+        "slug": "reactive-dye",
+        "url": "/reactive-dye.html",
+        "products": [
+          {
+            "name": "AZO BLUE",
+            "slug": "azo-blue",
+            "anchor": "#azo-blue"
+          }
+        ]
+      },
+  
+      {
+        "name": "Nickel Alloy Products",
+        "slug": "nickel-alloy-products",
+        "url": "/nickel-alloy-products.html",
+        "products": [
+          {
+            "name": "COBALT ROD",
+            "slug": "cobalt-rod",
+            "anchor": "#cobalt-rod"
+          }
+        ]
+      },
+  
+      {
+        "name": "Natural Mineral",
+        "slug": "natural-mineral",
+        "url": "/natural-mineral.html",
+        "products": [
+          {
+            "name": "Calcein-AM",
+            "slug": "calcein-am",
+            "anchor": "#calcein-am"
+          }
+        ]
+      },
+  
+      {
+        "name": "Stearic Acid",
+        "slug": "stearic-acid",
+        "url": "/stearic-acid.html",
+        "products": [
+          {
+            "name": "N-AMINORHODANINE",
+            "slug": "n-aminorhodanine",
+            "anchor": "#n-aminorhodanine"
+          }
+        ]
+      },
+  
+      {
+        "name": "New Items",
+        "slug": "new-items",
+        "url": "/new-items.html",
+        "products": [
+          {
+            "name": "Dicyclohexyl(2,4,6-Triisopropyl-3,6-Dimethoxy[1,1-Biphenyl]-2yl)Phosphane",
+            "slug": "dicyclohexyl-2-4-6-triisopropyl-3-6-dimethoxy-1-1-biphenyl-2yl-phosphane",
+            "anchor": "#dicyclohexyl-2-4-6-triisopropyl-3-6-dimethoxy-1-1-biphenyl-2yl-phosphane"
+          },
+          {
+            "name": "BIS (Pentafluorophenyl) Carbonate",
+            "slug": "bis-pentafluorophenyl-carbonate",
+            "anchor": "#bis-pentafluorophenyl-carbonate"
+          },
+          {
+            "name": "Bis (nitrophenyl) Carbonate",
+            "slug": "bis-nitrophenyl-carbonate",
+            "anchor": "#bis-nitrophenyl-carbonate"
+          }
+        ]
+      }
+    ]
+  }
+  
