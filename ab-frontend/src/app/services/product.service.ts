@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Category } from './category.service';
 
 export interface Product {
   id: number;
@@ -9,6 +10,9 @@ export interface Product {
   imageUrl: string;
   description: string;
   category: string;
+  categoryEntity?: Category;
+  slug: string;
+  anchor: string;
 }
 
 @Injectable({
@@ -35,6 +39,10 @@ export class ProductService {
 
   getProduct(id: number): Observable<Product> {
     return this.http.get<Product>(`${this.baseUrl}/${id}`);
+  }
+
+  createProduct(product: Omit<Product, 'id'>): Observable<Product> {
+    return this.http.post<Product>(this.baseUrl, product);
   }
 }
 

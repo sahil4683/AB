@@ -19,6 +19,11 @@ export class ContactService {
   sendContact(request: ContactRequest): Observable<any> {
     return this.http.post(this.baseUrl, request);
   }
+
+    submitContact(contactData: { mobileNumber: string; product: string }): Observable<any> {
+    return this.http.post('/api/contact', contactData);
+  }
+
 }
 
 

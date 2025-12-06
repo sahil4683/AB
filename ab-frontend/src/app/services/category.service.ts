@@ -20,4 +20,8 @@ export class CategoryService {
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(this.baseUrl);
   }
+
+  createCategory(category: Omit<Category, 'id'>): Observable<Category> {
+    return this.http.post<Category>(this.baseUrl, category);
+  }
 }
