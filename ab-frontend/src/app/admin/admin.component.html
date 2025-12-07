@@ -30,7 +30,7 @@
           <label for="productCategory">Category:</label>
           <select id="productCategory" formControlName="categoryId" required>
             <option value="">Select Category</option>
-            @for (category of categories; track category.id) {
+            @for (category of categories(); track category.id) {
               <option [value]="category.id">
                 {{ category.name }}
               </option>
@@ -70,9 +70,9 @@
   <!-- Data Display Section -->
   <div class="data-section">
     <div class="data-card">
-      <h2>Categories ({{ categories.length }})</h2>
+      <h2>Categories ({{ categories().length }})</h2>
       <div class="data-list">
-        @for (category of categories; track category.id) {
+        @for (category of categories(); track category.id) {
           <div class="data-item">
             <strong>{{ category.name }}</strong>
             <br>
@@ -83,9 +83,9 @@
     </div>
 
     <div class="data-card">
-      <h2>Products ({{ products.length }})</h2>
+      <h2>Products ({{ products().length }})</h2>
       <div class="data-list">
-        @for (product of products; track product.id) {
+        @for (product of products(); track product.id) {
           <div class="data-item">
             <strong>{{ product.title }}</strong>
             <br>

@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ProductService, Product } from '../services/product.service';
 import { CategoryService, Category } from '../services/category.service';
 import Swal from 'sweetalert2';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.scss']
 })
-export class AdminComponent implements OnInit {
-  categories: Category[] = [];
-  products: Product[] = [];
+export class AdminComponent implements OnInit, AfterViewInit {
+  categories = signal<Category[]>([]);
+  products = signal<Product[]>([]);
 
   productForm: FormGroup;
   categoryForm: FormGroup;
@@ -43,22 +44,26 @@ export class AdminComponent implements OnInit {
     this.loadProducts();
   }
 
+  ngAfterViewInit(): void {
+   
+  }
+
   loadCategories(): void {
     this.categoryService.getCategories().subscribe(categories => {
-      this.categories = categories;
+      this.categories.set(categories);
     });
   }
 
   loadProducts(): void {
     this.productService.getProducts().subscribe(products => {
-      this.products = products;
+      this.products.set(products);
     });
   }
 
   onSubmitProduct(): void {
     if (this.productForm.valid) {
       const formValue = this.productForm.value;
-      const selectedCategory = this.categories.find(c => c.id === +formValue.categoryId);
+      const selectedCategory = this.categories().find(c => c.id === +formValue.categoryId);
 
       const product: Omit<Product, 'id'> = {
         title: formValue.title,
