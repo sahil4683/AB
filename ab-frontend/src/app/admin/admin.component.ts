@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, signal } from '@angular/core';
+import { AfterViewInit, Component, OnInit, signal, computed } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ProductService, Product } from '../services/product.service';
 import { CategoryService, Category } from '../services/category.service';
@@ -15,9 +15,33 @@ import { CommonModule } from '@angular/common';
 export class AdminComponent implements OnInit, AfterViewInit {
   categories = signal<Category[]>([]);
   products = signal<Product[]>([]);
+  
+  // Search signals
+  categorySearch = signal('');
+  productSearch = signal('');
 
   productForm: FormGroup;
   categoryForm: FormGroup;
+
+  // Computed filtered lists
+  filteredCategories = computed(() => {
+    const searchTerm = this.categorySearch().toLowerCase();
+    if (!searchTerm) return this.categories();
+    return this.categories().filter(cat =>
+      cat.name.toLowerCase().includes(searchTerm) ||
+      cat.slug.toLowerCase().includes(searchTerm)
+    );
+  });
+
+  filteredProducts = computed(() => {
+    const searchTerm = this.productSearch().toLowerCase();
+    if (!searchTerm) return this.products();
+    return this.products().filter(prod =>
+      prod.title.toLowerCase().includes(searchTerm) ||
+      prod.casNumber?.toLowerCase().includes(searchTerm) ||
+      prod.category?.toLowerCase().includes(searchTerm)
+    );
+  });
 
   constructor(
     private fb: FormBuilder,
@@ -108,5 +132,69 @@ export class AdminComponent implements OnInit, AfterViewInit {
         });
       });
     }
+  }
+
+  deleteProduct(productId: number, productTitle: string): void {
+    Swal.fire({
+      title: 'Delete Product?',
+      text: `Are you sure you want to delete "${productTitle}"?`,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#dc3545',
+      cancelButtonColor: '#6c757d',
+      confirmButtonText: 'Delete',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.productService.deleteProduct(productId).subscribe(() => {
+          this.loadProducts();
+          Swal.fire({
+            title: 'Deleted!',
+            text: 'Product deleted successfully',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          });
+        }, (error) => {
+          Swal.fire({
+            title: 'Error!',
+            text: 'Failed to delete product',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          });
+        });
+      }
+    });
+  }
+
+  deleteCategory(categoryId: number, categoryName: string): void {
+    Swal.fire({
+      title: 'Delete Category?',
+      text: `Are you sure you want to delete "${categoryName}"?`,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#dc3545',
+      cancelButtonColor: '#6c757d',
+      confirmButtonText: 'Delete',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.categoryService.deleteCategory(categoryId).subscribe(() => {
+          this.loadCategories();
+          Swal.fire({
+            title: 'Deleted!',
+            text: 'Category deleted successfully',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          });
+        }, (error) => {
+          Swal.fire({
+            title: 'Error!',
+            text: 'Failed to delete category',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          });
+        });
+      }
+    });
   }
 }
