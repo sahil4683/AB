@@ -435,40 +435,89 @@ main {
   margin-bottom: 8px;
 }
 
-.active-filter {
+.catalog-search-bar {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 12px;
   font-size: 13px;
-  margin-top: 8px;
-  flex-wrap: wrap;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.filter-label {
+.catalog-search-bar:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);
+}
+
+.catalog-search-bar .search-icon {
+  width: 18px;
+  height: 18px;
   color: var(--muted);
-  font-weight: 500;
+  flex-shrink: 0;
 }
 
-.filter-tag {
-  display: inline-block;
-  background: #e0f2fe;
-  color: #0369a1;
-  padding: 4px 12px;
-  border-radius: 16px;
-  font-weight: 600;
-  font-size: 12px;
+.catalog-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  font-family: inherit;
+  color: #111;
 }
 
-.filter-count {
+.catalog-search-input::placeholder {
+  color: #bdbdbd;
+}
+
+.result-count {
   color: var(--muted);
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .sort-select {
   align-self: flex-start;
   margin-top: 0;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23111' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
 }
+
+.sort-select:hover {
+  border-color: var(--accent);
+  background-color: #f9fafb;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(11, 99, 214, 0.1);
+}
+
+.sort-select option {
+  background: #fff;
+  color: #111;
+  padding: 8px;
+}
+
 
 .catalog-header h2 {
   margin: 0;

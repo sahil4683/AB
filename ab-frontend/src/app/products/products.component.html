@@ -90,10 +90,18 @@
           <div>
             <h2 id="catTitle">{{ selectedCategory() }}</h2>
             <div class="muted">Browse our full chemical catalog.</div>
-            <div class="active-filter">
-              <span class="filter-label">Filtering by:</span>
-              <span class="filter-tag">{{ selectedCategory() }}</span>
-              <span class="filter-count">{{ filteredProducts().length }} product{{ filteredProducts().length !== 1 ? 's' : '' }} found</span>
+            <div class="catalog-search-bar">
+              <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <input
+                class="catalog-search-input"
+                placeholder="Search in {{ selectedCategory() }}..."
+                (input)="updateSearch($any($event.target).value)"
+                [value]="search()"
+                autocomplete="off"
+              />
+              <span class="result-count">{{ filteredProducts().length }} product{{ filteredProducts().length !== 1 ? 's' : '' }} found</span>
             </div>
           </div>
           <select (change)="updateSort($any($event.target).value)" [value]="sort()" class="sort-select">
