@@ -1,0 +1,227 @@
+<div class="top-bar"></div>
+
+<header>
+  <div class="header-content">
+    <div class="brand-section">
+      <div class="logo-container">
+        <a (click)="goHome()" class="logo-link">
+          <img src="/a-b-enterprises-120x120-90x90.webp" alt="A B Enterprises Logo" />
+        </a>
+      </div>
+      <div class="brand-info">
+        <h1 class="brand-name"><a (click)="goHome()" class="brand-link">A B Enterprises</a></h1>
+        <p class="brand-location">Mumbai, Maharashtra</p>
+        <div class="verification-badges">
+          <div class="badge">
+            <div class="badge-icon gst">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            </div>
+            <span>GST No. 27AAAFA2099R1ZY</span>
+          </div>
+          <div class="badge">
+            <div class="badge-icon trustseal">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            </div>
+            <span>TrustSEAL Verified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a href="tel:08048966876" class="action-btn call">
+        <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        <div class="btn-label">
+          <span class="btn-text">Call 08048966876</span>
+          <span class="btn-subtext">92% Response Rate</span>
+        </div>
+      </a>
+      <a href="mailto:info@xxxx.com" class="action-btn email">
+        <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        <span class="btn-text">SEND EMAIL</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="search-bar-container">
+  <div class="search-bar-wrapper">
+    <div class="search-bar" [class.active]="searchFocused()">
+      <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input
+        class="search-input"
+        placeholder="Search chemicals, CAS number, or product name..."
+        (input)="updateSearch($any($event.target).value)"
+        (focus)="onSearchBarFocus()"
+        (blur)="searchFocused.set(false)"
+        [value]="search()"
+        autocomplete="off"
+      />
+      <button *ngIf="search()" class="clear-btn" (click)="clearSearch()" aria-label="Clear search">
+        <svg fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Product Categories</h3>
+      <ul class="cats">
+        <li *ngFor="let cat of categoriesData()">
+          <a
+            href="#"
+            [class.active]="selectedCategory() === cat"
+            (click)="$event.preventDefault(); selectCategory(cat)"
+          >
+            {{ cat }}
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <section>
+      <div class="catalog-header">
+        <div class="catalog-header-content">
+          <div>
+            <h2 id="catTitle">{{ selectedCategory() }}</h2>
+            <div class="muted">Browse our full chemical catalog.</div>
+            <div class="active-filter">
+              <span class="filter-label">Filtering by:</span>
+              <span class="filter-tag">{{ selectedCategory() }}</span>
+              <span class="filter-count">{{ filteredProducts().length }} product{{ filteredProducts().length !== 1 ? 's' : '' }} found</span>
+            </div>
+          </div>
+          <select (change)="updateSort($any($event.target).value)" [value]="sort()" class="sort-select">
+            <option value="relevance">Sort: Relevance</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products">
+        <article class="card" *ngFor="let product of filteredProducts()">
+          <div class="thumb">
+            <img [src]="product.imageUrl" [alt]="product.title" />
+          </div>
+          <h4>{{ product.title }}</h4>
+          <div class="meta">CAS: {{ product.casNumber }}</div>
+          <div class="meta">Category: {{ product.category }}</div>
+          <div class="actions">
+            <button class="btn primary" (click)="openContactModal(product)">Ask For Price</button>
+            <button class="btn ghost" (click)="openProductModal(product)">Details</button>
+          </div>
+        </article>
+
+        <div *ngIf="filteredProducts().length === 0" class="empty">
+          No products found in this category.
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<div class="modal" [class.open]="productModalOpen()" (click)="closeProductModal()">
+  <div class="panel" (click)="$event.stopPropagation()">
+    <div class="gallery">
+      <img
+        *ngIf="selectedProduct()"
+        [src]="selectedProduct()?.imageUrl"
+        [alt]="selectedProduct()?.title"
+      />
+    </div>
+    <div class="info">
+      <h3>{{ selectedProduct()?.title }}</h3>
+      <div class="meta">CAS: {{ selectedProduct()?.casNumber }}</div>
+      <p>{{ selectedProduct()?.description }}</p>
+      <div class="modal-actions">
+        <button class="btn primary" (click)="openContactModal(selectedProduct()!)">Ask For Price</button>
+        <button class="btn ghost" (click)="openContactModal(selectedProduct()!)">Request Callback</button>
+      </div>
+    </div>
+    <button class="close" (click)="closeProductModal()">✕</button>
+  </div>
+</div>
+
+<div class="modal contact-modal" [class.open]="contactModalOpen()" (click)="closeContactModal()">
+  <div class="panel" (click)="$event.stopPropagation()">
+    <button class="close" (click)="closeContactModal()">✕</button>
+    <h3>Share your requirement with "A B Enterprises"</h3>
+    <form [formGroup]="contactForm" (ngSubmit)="submitContactForm()">
+      <div class="contact-form-group">
+        <label for="mobileNumber">Mobile Number</label>
+        <div class="mobile-input-wrapper">
+          <div class="country-code-select">
+            <span class="flag"></span>
+            <select formControlName="countryCode">
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+              <option value="+44">+44</option>
+            </select>
+          </div>
+          <input
+            type="tel"
+            id="mobileNumber"
+            placeholder="Enter your mobile"
+            formControlName="mobileNumber"
+            maxlength="10"
+          />
+        </div>
+        <div class="contact-form-hint">We will contact you on this number</div>
+      </div>
+      <button type="submit" class="contact-now-btn">Contact Now</button>
+    </form>
+    <div class="status" *ngIf="statusMessage()">{{ statusMessage() }}</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Reach Us</h3>
+      <p><strong>Manoharlal Bang (Partner)</strong></p>
+      <p>A B Enterprises</p>
+      <p>711, Damji Shamji Corporate Square Wing B,<br>
+      Rajaram Bane Marg, Laxmi Nagar, Ghatkopar<br>
+      Mumbai - 400075, Maharashtra, India</p>
+    </div>
+    <div class="footer-section">
+      <h3>Our Company</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Corporate Presentation</a></li>
+        <li><a href="#">Corporate Video</a></li>
+        <li><a href="#">Corporate Brochure</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Products</h3>
+      <ul>
+        <li><a href="industrial-chemicals.html">Industrial Chemicals</a></li>
+        <li><a href="industrial-chemicals.html">Laboratory Chemical</a></li>
+        <li><a href="industrial-chemicals.html">Speciality Chemical</a></li>
+        <li><a href="industrial-chemicals.html">Water Treatment Chemicals</a></li>
+        <li><a href="industrial-chemicals.html">Pharmaceutical Ingredients</a></li>
+        <li><a href="industrial-chemicals.html">Solvents</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p><strong>Call Us</strong></p>
+      <p>08048966876</p>
+      <p>Call Response Rate: 92%</p>
+      <p class="mt-3">
+        <a href="mailto:info@xxxx.com">Send E-mail</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© A B Enterprises. All Rights Reserved (Terms of Use)</p>
+  </div>
+</footer>

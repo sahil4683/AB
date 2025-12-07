@@ -41,71 +41,12 @@
   </div>
 </header>
 
-<div class="search-bar-container">
-  <div class="search-bar-wrapper">
-    <input
-      placeholder="Search chemicals, CAS number, product name..."
-      (input)="updateSearch($any($event.target).value)"
-      [value]="search()"
-    />
-  </div>
-</div>
-
 <main>
-  <section class="hero" *ngIf="!showCatalog()">
+  <section class="hero">
     <h1>A B Enterprises</h1>
     <p>Manufacturer and Exporter of Industrial Chemicals. We serve chemical, pharma, textile, food and other industries, with wide array of diversified chemicals and paints.</p>
-    <a class="btn-primary" (click)="goToCatalog()">Explore Our Products</a>
+    <button class="btn-primary" (click)="goToCatalog()">Explore Our Products</button>
   </section>
-
-  <div class="container" *ngIf="showCatalog()">
-    <aside class="sidebar">
-      <h3>Product Categories</h3>
-      <ul class="cats">
-        <li *ngFor="let cat of categoriesData()">
-          <a
-            href="#"
-            [class.active]="selectedCategory() === cat"
-            (click)="$event.preventDefault(); selectCategory(cat)"
-          >
-            {{ cat }}
-          </a>
-        </li>
-      </ul>
-    </aside>
-
-    <section>
-      <div class="catalog-header">
-        <div>
-          <h2 id="catTitle">{{ selectedCategory() }}</h2>
-          <div class="muted">Browse our full chemical catalog.</div>
-        </div>
-        <select (change)="updateSort($any($event.target).value)" [value]="sort()">
-          <option value="relevance">Sort: Relevance</option>
-          <option value="name">Name A–Z</option>
-        </select>
-      </div>
-
-      <div class="products">
-        <article class="card" *ngFor="let product of filteredProducts()">
-          <div class="thumb">
-            <img [src]="product.imageUrl" [alt]="product.title" />
-          </div>
-          <h4>{{ product.title }}</h4>
-          <div class="meta">CAS: {{ product.casNumber }}</div>
-          <div class="meta">Category: {{ product.category }}</div>
-          <div class="actions">
-            <button class="btn primary" (click)="openContactModal(product)">Ask For Price</button>
-            <button class="btn ghost" (click)="openProductModal(product)">Details</button>
-          </div>
-        </article>
-
-        <div *ngIf="filteredProducts().length === 0" class="empty">
-          No products found in this category.
-        </div>
-      </div>
-    </section>
-  </div>
 
   <section id="products" class="featured-section">
     <h2 class="section-title">Featured Products</h2>
@@ -123,7 +64,7 @@
       </article>
 
       <div *ngIf="featuredProducts().length === 0" class="empty">
-        No products found matching your search.
+        No products found.
       </div>
     </div>
   </section>
@@ -166,60 +107,6 @@
     </div>
   </section>
 </main>
-
-<div class="modal" [class.open]="productModalOpen()" (click)="closeModals()">
-  <div class="panel" (click)="$event.stopPropagation()">
-    <div class="gallery">
-      <img
-        *ngIf="selectedProduct()"
-        [src]="selectedProduct()?.imageUrl"
-        [alt]="selectedProduct()?.title"
-      />
-    </div>
-    <div class="info">
-      <h3>{{ selectedProduct()?.title }}</h3>
-      <div class="meta">CAS: {{ selectedProduct()?.casNumber }}</div>
-      <p>{{ selectedProduct()?.description }}</p>
-      <div class="modal-actions">
-        <button class="btn primary" (click)="openContactModal(selectedProduct()!)">Ask For Price</button>
-        <button class="btn ghost" (click)="openContactModal(selectedProduct()!)">Request Callback</button>
-      </div>
-    </div>
-    <button class="close" (click)="closeProductModal()">✕</button>
-  </div>
-</div>
-
-<div class="modal contact-modal" [class.open]="contactModalOpen()" (click)="closeModals()">
-  <div class="panel" (click)="$event.stopPropagation()">
-    <button class="close" (click)="closeContactModal()">✕</button>
-    <h3>Share your requirement with "A B Enterprises"</h3>
-    <form [formGroup]="contactForm" (ngSubmit)="submitContact()">
-      <div class="contact-form-group">
-        <label for="mobileNumber">Mobile Number</label>
-        <div class="mobile-input-wrapper">
-          <div class="country-code-select">
-            <span class="flag"></span>
-            <select formControlName="countryCode">
-              <option value="+91">+91</option>
-              <option value="+1">+1</option>
-              <option value="+44">+44</option>
-            </select>
-          </div>
-          <input
-            type="tel"
-            id="mobileNumber"
-            placeholder="Enter your mobile"
-            formControlName="mobileNumber"
-            maxlength="10"
-          />
-        </div>
-        <div class="contact-form-hint">We will contact you on this number</div>
-      </div>
-      <button type="submit" class="contact-now-btn">Contact Now</button>
-    </form>
-    <div class="status" *ngIf="statusMessage()">{{ statusMessage() }}</div>
-  </div>
-</div>
 
 <footer>
   <div class="footer-content">
