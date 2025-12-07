@@ -3,9 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface ContactRequest {
+  id?: number;
   countryCode: string;
   mobileNumber: string;
   productId?: number | null;
+  product?: string;
+  complete?: boolean;
+  createdAt?: string;
 }
 
 @Injectable({
@@ -20,10 +24,17 @@ export class ContactService {
     return this.http.post(this.baseUrl, request);
   }
 
-    submitContact(contactData: { mobileNumber: string; product: string }): Observable<any> {
-    return this.http.post('/api/contact', contactData);
+  submitContact(contactData: { mobileNumber: string; product: string }): Observable<any> {
+    return this.http.post(this.baseUrl, contactData);
   }
 
+  getContactRequests(): Observable<ContactRequest[]> {
+    return this.http.get<ContactRequest[]>(this.baseUrl);
+  }
+
+  updateContactRequest(id: number, request: ContactRequest): Observable<ContactRequest> {
+    return this.http.put<ContactRequest>(`${this.baseUrl}/${id}`, request);
+  }
 }
 
 

@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit, signal, computed } from '@angular/cor
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ProductService, Product } from '../services/product.service';
 import { CategoryService, Category } from '../services/category.service';
+import { ContactService, ContactRequest } from '../services/contact.service';
 import Swal from 'sweetalert2';
 import { CommonModule } from '@angular/common';
 
@@ -15,10 +16,12 @@ import { CommonModule } from '@angular/common';
 export class AdminComponent implements OnInit, AfterViewInit {
   categories = signal<Category[]>([]);
   products = signal<Product[]>([]);
+  contactRequests = signal<ContactRequest[]>([]);
   
   // Search signals
   categorySearch = signal('');
   productSearch = signal('');
+  contactSearch = signal('');
 
   productForm: FormGroup;
   categoryForm: FormGroup;
@@ -43,10 +46,20 @@ export class AdminComponent implements OnInit, AfterViewInit {
     );
   });
 
+  filteredContactRequests = computed(() => {
+    const searchTerm = this.contactSearch().toLowerCase();
+    if (!searchTerm) return this.contactRequests();
+    return this.contactRequests().filter(req =>
+      req.mobileNumber?.toLowerCase().includes(searchTerm) ||
+      req.countryCode?.toLowerCase().includes(searchTerm)
+    );
+  });
+
   constructor(
     private fb: FormBuilder,
     private productService: ProductService,
-    private categoryService: CategoryService
+    private categoryService: CategoryService,
+    private contactService: ContactService
   ) {
     this.productForm = this.fb.group({
       title: ['', Validators.required],
@@ -66,6 +79,7 @@ export class AdminComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.loadCategories();
     this.loadProducts();
+    this.loadContactRequests();
   }
 
   ngAfterViewInit(): void {
@@ -81,6 +95,12 @@ export class AdminComponent implements OnInit, AfterViewInit {
   loadProducts(): void {
     this.productService.getProducts().subscribe(products => {
       this.products.set(products);
+    });
+  }
+
+  loadContactRequests(): void {
+    this.contactService.getContactRequests().subscribe(requests => {
+      this.contactRequests.set(requests);
     });
   }
 
@@ -195,6 +215,24 @@ export class AdminComponent implements OnInit, AfterViewInit {
           });
         });
       }
+    });
+  }
+
+  toggleContactComplete(request: ContactRequest): void {
+    const updatedRequest = {
+      ...request,
+      complete: !request.complete
+    };
+    
+    this.contactService.updateContactRequest(request.id!, updatedRequest).subscribe(() => {
+      this.loadContactRequests();
+    }, (error) => {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Failed to update contact request',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
     });
   }
 }

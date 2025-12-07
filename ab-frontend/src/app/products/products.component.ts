@@ -134,7 +134,7 @@ export class ProductsComponent implements OnInit {
 
   closeContactModal() {
     this.contactModalOpen.set(false);
-    this.selectedProduct.set(null);
+    // this.selectedProduct.set(null);
     this.contactForm.reset({ countryCode: '+91' });
   }
 
@@ -147,6 +147,8 @@ export class ProductsComponent implements OnInit {
       const contactData = {
         mobileNumber: fullNumber,
         product: product!.title,
+        productId: product!.id,
+        countryCode: countryCode
       };
 
       this.contactService.submitContact(contactData).subscribe(() => {

@@ -20,6 +20,8 @@ public class ContactRequest {
 
     private Long productId;
 
+    private boolean complete = false;
+
     private LocalDateTime createdAt = LocalDateTime.now();
 
     public ContactRequest() {
@@ -55,6 +57,14 @@ public class ContactRequest {
 
     public void setProductId(Long productId) {
         this.productId = productId;
+    }
+
+    public boolean isComplete() {
+        return complete;
+    }
+
+    public void setComplete(boolean complete) {
+        this.complete = complete;
     }
 
     public LocalDateTime getCreatedAt() {

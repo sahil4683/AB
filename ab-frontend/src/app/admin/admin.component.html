@@ -132,5 +132,43 @@
         }
       </div>
     </div>
+
+    <!-- Contact Requests -->
+    <div class="data-card full-width">
+      <h2>Contact Requests ({{ filteredContactRequests().length }})</h2>
+      <div class="search-bar">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search by phone number or country code..."
+          (input)="contactSearch.set($any($event.target).value)"
+          [value]="contactSearch()"
+        />
+      </div>
+      <div class="data-list">
+        @for (request of filteredContactRequests(); track request.id) {
+          <div class="data-item">
+            <input 
+              type="checkbox" 
+              class="complete-checkbox"
+              [checked]="request.complete"
+              (change)="toggleContactComplete(request)"
+              title="Mark as complete"
+            />
+            <div class="item-content" [class.complete]="request.complete">
+              <strong>{{ request.countryCode }} {{ request.mobileNumber }}</strong>
+              <br>
+              <small>Product ID: {{ request.productId }} | Date: {{ request.createdAt | date:'short' }}</small>
+            </div>
+          </div>
+        }
+        @if (filteredContactRequests().length === 0) {
+          <div class="empty-message">No contact requests found</div>
+        }
+      </div>
+    </div>
   </div>
 </div>
