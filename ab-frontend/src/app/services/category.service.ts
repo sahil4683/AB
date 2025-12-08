@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { BaseApiService } from '../core/services/base-api.service';
+import { LoggerService } from '../core/services/logger.service';
 
 export interface Category {
   id: number;
@@ -9,23 +12,53 @@ export interface Category {
   url: string;
 }
 
+/**
+ * Category Service
+ * Handles all category-related API operations
+ */
 @Injectable({
   providedIn: 'root',
 })
-export class CategoryService {
-  private readonly baseUrl = 'http://localhost:8080/api/categories';
+export class CategoryService extends BaseApiService {
+  private readonly endpoint = '/categories';
 
-  constructor(private http: HttpClient) {}
+  constructor(http: HttpClient, logger: LoggerService) {
+    super(http, logger);
+  }
 
+  /**
+   * Get all categories
+   */
   getCategories(): Observable<Category[]> {
-    return this.http.get<Category[]>(this.baseUrl);
+    return this.get<Category[]>(this.endpoint).pipe(
+      tap((categories) => this.logger.info(`Loaded ${categories.length} categories`))
+    );
   }
 
+  /**
+   * Create a new category
+   */
   createCategory(category: Omit<Category, 'id'>): Observable<Category> {
-    return this.http.post<Category>(this.baseUrl, category);
+    return this.post<Category>(this.endpoint, category).pipe(
+      tap((created) => this.logger.info(`Category created: ${created.name}`))
+    );
   }
 
+  /**
+   * Update an existing category
+   */
+  updateCategory(id: number, category: Partial<Category>): Observable<Category> {
+    return this.put<Category>(`${this.endpoint}/${id}`, category).pipe(
+      tap((updated) => this.logger.info(`Category updated: ${updated.name}`))
+    );
+  }
+
+  /**
+   * Delete a category
+   */
   deleteCategory(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/${id}`);
+    return this.delete<void>(`${this.endpoint}/${id}`).pipe(
+      tap(() => this.logger.info(`Category deleted: ${id}`))
+    );
   }
 }

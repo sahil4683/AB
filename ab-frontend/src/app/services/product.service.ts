@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { BaseApiService } from '../core/services/base-api.service';
+import { LoggerService } from '../core/services/logger.service';
 import { Category } from './category.service';
 
 export interface Product {
@@ -15,38 +18,75 @@ export interface Product {
   anchor: string;
 }
 
+/**
+ * Product Service
+ * Handles all product-related API operations
+ */
 @Injectable({
   providedIn: 'root',
 })
-export class ProductService {
-  private readonly baseUrl = 'http://localhost:8080/api/products';
+export class ProductService extends BaseApiService {
+  private readonly endpoint = '/products';
 
-  constructor(private http: HttpClient) {}
+  constructor(http: HttpClient, logger: LoggerService) {
+    super(http, logger);
+  }
 
+  /**
+   * Get all products with optional filters
+   */
   getProducts(category?: string, q?: string, sort?: string): Observable<Product[]> {
-    let params = new HttpParams();
+    const params: Record<string, string> = {};
+
     if (category) {
-      params = params.set('category', category);
+      params['category'] = category;
     }
     if (q) {
-      params = params.set('q', q);
+      params['q'] = q;
     }
     if (sort) {
-      params = params.set('sort', sort);
+      params['sort'] = sort;
     }
-    return this.http.get<Product[]>(this.baseUrl, { params });
+
+    return this.get<Product[]>(this.endpoint, params).pipe(
+      tap((products) => this.logger.info(`Loaded ${products.length} products`))
+    );
   }
 
+  /**
+   * Get a single product by ID
+   */
   getProduct(id: number): Observable<Product> {
-    return this.http.get<Product>(`${this.baseUrl}/${id}`);
+    return this.get<Product>(`${this.endpoint}/${id}`).pipe(
+      tap((product) => this.logger.info(`Loaded product: ${product.title}`))
+    );
   }
 
+  /**
+   * Create a new product
+   */
   createProduct(product: Omit<Product, 'id'>): Observable<Product> {
-    return this.http.post<Product>(this.baseUrl, product);
+    return this.post<Product>(this.endpoint, product).pipe(
+      tap((created) => this.logger.info(`Product created: ${created.title}`))
+    );
   }
 
+  /**
+   * Update an existing product
+   */
+  updateProduct(id: number, product: Partial<Product>): Observable<Product> {
+    return this.put<Product>(`${this.endpoint}/${id}`, product).pipe(
+      tap((updated) => this.logger.info(`Product updated: ${updated.title}`))
+    );
+  }
+
+  /**
+   * Delete a product
+   */
   deleteProduct(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/${id}`);
+    return this.delete<void>(`${this.endpoint}/${id}`).pipe(
+      tap(() => this.logger.info(`Product deleted: ${id}`))
+    );
   }
 }
 

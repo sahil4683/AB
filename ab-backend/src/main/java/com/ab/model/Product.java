@@ -2,30 +2,45 @@ package com.ab.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import lombok.*;
 
+/**
+ * Product entity representing a chemical product in the inventory.
+ */
 @Entity
-@Table(name = "products")
+@Table(name = "products", indexes = {
+    @Index(name = "idx_category_id", columnList = "category_id"),
+    @Index(name = "idx_title", columnList = "title"),
+    @Index(name = "idx_slug", columnList = "slug")
+})
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
+    @NotBlank(message = "Product title is required")
     private String title;
 
-    @Column(name = "cas_number")
+    @Column(name = "cas_number", length = 50)
     private String casNumber;
 
+    @Column(name = "image_url", columnDefinition = "TEXT")
     private String imageUrl;
 
-    @Column(length = 2000)
+    @Column(length = 2000, columnDefinition = "TEXT")
     private String description;
 
-    @Column
+    @Column(length = 255, unique = true)
     private String slug;
 
-    @Column(name = "anchor")
+    @Column(length = 255)
     private String anchor;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -33,12 +48,9 @@ public class Product {
     @JsonIgnoreProperties({"products"})
     private Category category;
 
-    // Keep legacy category field for backward compatibility
-    @Column(name = "category_name")
+    @Column(name = "category_name", length = 100)
+    @ToString.Exclude
     private String categoryName;
-
-    public Product() {
-    }
 
     public Product(String title, String casNumber, String imageUrl, String description, String category) {
         this.title = title;
@@ -56,68 +68,12 @@ public class Product {
         this.categoryName = category != null ? category.getName() : null;
     }
 
-    public Long getId() {
-        return id;
+    public String getCategory() {
+        return categoryName != null ? categoryName : (category != null ? category.getName() : null);
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCasNumber() {
-        return casNumber;
-    }
-
-    public void setCasNumber(String casNumber) {
-        this.casNumber = casNumber;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
-    }
-
-    public String getSlug() {
-        return slug;
-    }
-
-    public void setSlug(String slug) {
-        this.slug = slug;
-    }
-
-    public String getAnchor() {
-        return anchor;
-    }
-
-    public void setAnchor(String anchor) {
-        this.anchor = anchor;
+    public void setCategory(String category) {
+        this.categoryName = category;
     }
 
     public Category getCategoryEntity() {
@@ -130,15 +86,7 @@ public class Product {
             this.categoryName = category.getName();
         }
     }
-
-    // Legacy method for backward compatibility - returns category name as string
-    public String getCategory() {
-        return categoryName != null ? categoryName : (category != null ? category.getName() : null);
-    }
-
-    public void setCategory(String category) {
-        this.categoryName = category;
-    }
 }
+
 
 
